@@ -17,13 +17,13 @@ public class TestServiceImpl implements TestService {
 	
 	@Override
 	public int insertCart(Test test) {
-		Test myCart = new Test(); // 임의로 만든 카트 데이터
-		myCart.setName("쌀");
-		myCart.setNum(1200);
-		myCart.setCount(6);
+		//Test myCart = new Test(); // 임의로 만든 카트 데이터
+		//myCart.setName("쌀");
+		//myCart.setNum(1200);
+		//myCart.setCount(6);
 		
 		int res = testImpl.insertCart(test);
-		res = res + testImpl.insertCart(myCart);
+		//res = res + testImpl.insertCart(myCart);
 		
 		return res;
 	}
