@@ -18,13 +18,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
+	/*
 	@Autowired
 	CartService cartServiceImpl;
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -46,5 +43,5 @@ public class HomeController {
 		model.addAttribute("carts", cartServiceImpl.selectCart()); // carts라는 값에 카트에 담겨있는 물건을 데이터베이스에서 가져와 저장		
 		return "index";
 	}	
-	
+	*/
 }
