@@ -26,9 +26,9 @@
 	<form method="post" action="/insertCarts.do"> <!-- post요청으로 /mvc/insertCarts.do에 데이터 전송 -->
 		<table id="insertTable">
 			<tr>
-				<td>이름</td>
-				<td>가격</td>
-				<td>갯수</td>
+				<td>이름1</td>
+				<td>가격1</td>
+				<td>갯수1</td>
 			</tr>
 			<tr>
 				<!-- Controller의 파라미터값과 input태그의 name값이 서로 매핑 -->
@@ -43,9 +43,9 @@
 	<h2>카트에 담겨있는 물건</h2>
 	<table id="selectTable">
 		<tr>
-			<td>이름</td>
-			<td>가격</td>
-			<td>갯수</td>
+			<td>이름2</td>
+			<td>가격2</td>
+			<td>갯수2</td>
 		</tr>
 		<c:forEach items="${carts}" var="cart"> <!-- Controller에서 Model에 carts라는 이름으로 넣어둔 값을 jstl을 이용하여 반복문 시행 -->
 			<tr>
