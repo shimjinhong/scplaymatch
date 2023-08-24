@@ -22,7 +22,7 @@
 <title>JSP Title</title>
 </head>
 <body>
-	<h2>카트에 담을 물건</h2>
+	<h2>카트에 담을 물건(왜 에러나노?)</h2>
 	<form method="post" action="/insertCarts.do"> <!-- post요청으로 /mvc/insertCarts.do에 데이터 전송 -->
 		<table id="insertTable">
 			<tr>
