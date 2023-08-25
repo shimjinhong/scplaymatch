@@ -1,648 +1,779 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page trimDirectiveWhitespaces="true" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> <!-- JSTL -->
 <!DOCTYPE html>
-<html lang="en">
-   <!-- Basic -->
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <!-- Mobile Metas -->
-   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-   <!-- Site Metas -->
-   <title>Game Info</title>
-   <meta name="keywords" content="">
-   <meta name="description" content="">
-   <meta name="author" content="">
-   <!-- Site Icons -->
-   <link rel="shortcut icon" href="" type="image/x-icon" />
-   <link rel="apple-touch-icon" href="">
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-   <!-- Site CSS -->
-   <link rel="stylesheet" href="../resources/style.css">
-   <!-- Colors CSS -->
-   <link rel="stylesheet" href="../resources/css/colors.css">
-   <!-- ALL VERSION CSS -->	
-   <link rel="stylesheet" href="../resources/css/versions.css">
-   <!-- Responsive CSS -->
-   <link rel="stylesheet" href="../resources/css/responsive.css">
-   <!-- Custom CSS -->
-   <link rel="stylesheet" href="../resources/css/custom.css">
-   <!-- font family -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   <!-- end font family -->
-   <link rel="stylesheet" href="css/3dslider.css" />
-   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-   <script src="js/3dslider.js"></script>
-   </head>
-   <body class="game_info" data-spy="scroll" data-target=".header">
-      <!-- LOADER -->
-      <div id="preloader">
-         <img class="preloader" src="/resources/images/loading-img.gif" alt="">
-      </div>
-      <!-- END LOADER -->
-      <section id="top">
-         <header>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Spanis</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
             <div class="container">
-               <div class="header-top">
-                  <div class="row">
-                     <div class="col-md-6">
-                        <div class="full">
-                           <div class="logo">
-                              <a href="index.html"><img src="/resources/images/logo.png" alt="#" /></a>
-                           </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                <li>Free Shipping for all Order of $99</li>
+                            </ul>
                         </div>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="right_top_section">
-                           <!-- social icon -->
-                           <ul class="social-icons pull-left">
-                              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                              <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                           </ul>
-                           <!-- end social icon -->
-                           <!-- button section -->
-                           <ul class="login">
-                              <li class="login-modal">
-                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
-                              </li>
-                              <li>
-                                 <div class="cart-option">
-                                    <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
-                                 </div>
-                              </li>
-                           </ul>
-                           <!-- end button section -->
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>English</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="header-bottom">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="full">
-                           <div class="main-menu-section">
-                              <div class="menu">
-                                 <nav class="navbar navbar-inverse">
-                                    <div class="navbar-header">
-                                       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-                                       <span class="sr-only">Toggle navigation</span>
-                                       <span class="icon-bar"></span>
-                                       <span class="icon-bar"></span>
-                                       <span class="icon-bar"></span>
-                                       </button>
-                                       <a class="navbar-brand" href="#">Menu</a>
-                                    </div>
-                                    <div class="collapse navbar-collapse js-navbar-collapse">
-                                       <ul class="nav navbar-nav">
-                                          <li class="active"><a href="index.html">Home</a></li>
-                                          <li><a href="about.html">About</a></li>
-                                          <li><a href="team.html">Team</a></li>
-                                          <li><a href="news.html">News</a></li>
-                                          <li class="dropdown mega-dropdown">
-                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span class="caret"></span></a>				
-                                             <ul class="dropdown-menu mega-dropdown-menu">
-                                                <li class="col-sm-8">
-                                                   <ul>
-                                                      <li class="dropdown-header">Men Collection</li>
-                                                      <div id="menCollection" class="carousel slide" data-ride="carousel">
-                                                         <div class="carousel-inner">
-                                                            <div class="item active">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="/resources/images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->
-                                                            <div class="item">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="/resources/images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->
-                                                            <div class="item">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="/resources/images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->                                
-                                                         </div>
-                                                         <!-- End Carousel Inner -->
-                                                         <!-- Controls -->
-                                                         <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
-                                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                         <span class="sr-only">Previous</span>
-                                                         </a>
-                                                         <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
-                                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                         <span class="sr-only">Next</span>
-                                                         </a>
-                                                      </div>
-                                                      <!-- /.carousel -->
-                                                   </ul>
-                                                </li>
-                                                <li class="col-sm-4">
-                                                   <ul class="menu-inner">
-                                                      <li class="dropdown-header">Next Matchs</li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                   </ul>
-                                                </li>
-                                             </ul>
-                                          </li>
-                                          <li><a href="blog.html">Blog</a></li>
-                                          <li><a href="contact.html">contact</a></li>
-                                       </ul>
-                                    </div>
-                                    <!-- /.nav-collapse -->
-                                 </nav>
-                                 <div class="search-bar">
-                                    <div id="imaginary_container">
-                                       <div class="input-group stylish-input-group">
-                                          <input type="text" class="form-control"  placeholder="Search" >
-                                          <span class="input-group-addon">
-                                          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>  
-                                          </span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </header>
-         <div class="full-slider">
-            <div id="carousel-example-generic" class="carousel slide">
-               <!-- Indicators -->
-               <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-               </ol>
-               <!-- Wrapper for slides -->
-               <div class="carousel-inner" role="listbox">
-                  <!-- First slide -->
-                  <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
-                     <div class="carousel-caption">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                           <div class="slider-contant" data-animation="animated fadeInRight">
-                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
-                              <p>If you use this site regularly and would like to help keep the site on the Internet,<br>
-                                 please consider donating a small sum to help pay..
-                              </p>
-                              <button class="btn btn-primary btn-lg">Read More</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- /.item -->
-                  <!-- Second slide -->
-                  <div class="item skyblue" data-ride="carousel" data-interval="5000">
-                     <div class="carousel-caption">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                           <div class="slider-contant" data-animation="animated fadeInRight">
-                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
-                              <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
-                              <button class="btn btn-primary btn-lg">Button</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- /.item -->
-                  <!-- Third slide -->
-                  <div class="item darkerskyblue" data-ride="carousel" data-interval="5000">
-                     <div class="carousel-caption">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                           <div class="slider-contant" data-animation="animated fadeInRight">
-                              <h3>If you Don’t Practice<br>You <span class="color-yellow">Don’t Derserve</span><br>to win!</h3>
-                              <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
-                              <button class="btn btn-primary btn-lg">Button</button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- /.item -->
-               </div>
-               <!-- /.carousel-inner -->
-               <!-- Controls -->
-               <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-               </a>
-               <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-               </a>
-            </div>
-            <!-- /.carousel -->
-            <div class="news">
-               <div class="container">
-                  <div class="heading-slider">
-                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> Top Headlines :</p>
-                     <!--made by vipul mirajkar thevipulm.appspot.com-->
-                     <h1>
-                     <a href="" class="typewrite" data-period="2000" data-type='[ "Contrary to popular belief, Lorem Ipsum is not simply random text.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."]'>
-                     <span class="wrap"></span>
-                     </a>
-                     </h1>	   
-                     <span class="wrap"></span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <div class="matchs-info">
-         <div class="col-md-6 col-sm-6 col-xs-12">
+        </div>
+        <div class="container">
             <div class="row">
-               <div class="full">
-                  <div class="matchs-vs">
-                     <div class="vs-team">
-                        <div class="team-btw-match">
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-03.png" alt="">
-                                 <span>Footbal Team</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-04.png" alt="">
-                                 <span>Super Team Club</span>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="row">
-               <div class="full">
-                  <div class="right-match-time">
-                     <h2>Next Match</h2>
-                     <ul id="countdown-1" class="countdown">
-                        <li><span class="days">10 </span>Day </li>
-                        <li><span class="hours">5 </span>Hours </li>
-                        <li><span class="minutes">25 </span>Minutes </li>
-                        <li><span class="seconds">10 </span>Seconds </li>
-                     </ul>
-                     <span>12/02/2017 /19:00pm</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <section id="contant" class="contant">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-4 col-sm-4 col-xs-12">
-                  <aside id="sidebar" class="left-bar">
-                     <div class="banner-sidebar">
-                        <img class="img-responsive" src="/resources/images/img-05.jpg" alt="#" />
-                        <h3>Lorem Ipsum is simply dummy text..</h3>
-                     </div>
-                  </aside>
-                  <h4>Match Fixture</h4>
-                  <aside id="sidebar" class="left-bar">
-                     <div class="feature-matchs">
-                        <div class="team-btw-match">
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-01_002.png" alt="">
-                                 <span>Portugal</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-02.png" alt="">
-                                 <span>Germany</span>
-                              </li>
-                           </ul>
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-03_002.png" alt="">
-                                 <span>Portugal</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-04_003.png" alt="">
-                                 <span>Germany</span>
-                              </li>
-                           </ul>
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-05_002.png" alt="">
-                                 <span>Portugal</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-06.png" alt="">
-                                 <span>Germany</span>
-                              </li>
-                           </ul>
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-07_002.png" alt="">
-                                 <span>Portugal</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-08.png" alt="">
-                                 <span>Germany</span>
-                              </li>
-                           </ul>
-                           <ul>
-                              <li>
-                                 <img src="/resources/images/img-05_002.png" alt="">
-                                 <span>Portugal</span>
-                              </li>
-                              <li class="vs"><span>vs</span></li>
-                              <li>
-                                 <img src="/resources/images/img-06.png" alt="">
-                                 <span>Germany</span>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </aside>
-                  <h4>Points Table</h4>
-                  <aside id="sidebar" class="left-bar">
-                     <div class="feature-matchs">
-                        <table class="table table-bordered table-hover">
-                           <thead>
-                              <tr>
-                                 <th>#</th>
-                                 <th>Team</th>
-                                 <th>P</th>
-                                 <th>W</th>
-                                 <th>L</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>1</td>
-                                 <td><img src="/resources/images/img-01_004.png" alt="">Liverpool</td>
-                                 <td>10</td>
-                                 <td>12</td>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <td>2</td>
-                                 <td><img src="/resources/images/img-02_002.png" alt="">Chelsea</td>
-                                 <td>10</td>
-                                 <td>12</td>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <td>3</td>
-                                 <td><img src="/resources/images/img-03_003.png" alt="">Norwich City</td>
-                                 <td>20</td>
-                                 <td>15</td>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <td>4</td>
-                                 <td><img src="/resources/images/img-04_002.png" alt="">West Brom</td>
-                                 <td>60</td>
-                                 <td>10</td>
-                                 <td>60</td>
-                              </tr>
-                              <tr>
-                                 <td>5</td>
-                                 <td><img src="/resources/images/img-05.png" alt="">sunderland</td>
-                                 <td>30</td>
-                                 <td>06</td>
-                                 <td>30</td>
-                              </tr>
-                              <tr>
-                                 <td>1</td>
-                                 <td><img src="/resources/images/img-01_004.png" alt="">Liverpool</td>
-                                 <td>10</td>
-                                 <td>12</td>
-                                 <td>20</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </aside>
-                  <div class="content-widget top-story" style="background: url(/resources/images/top-story-bg.jpg);">
-                     <div class="top-stroy-header">
-                        <h2>Top Soccer Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
-                        <span class="date">July 05, 2017</span>
-                        <h2>Other Headlines</h2>
-                     </div>
-                     <ul class="other-stroies">
-                        <li><a href="#">Wenger Vardy won't start</a></li>
-                        <li><a href="#">Evans: Vardy just</a></li>
-                        <li><a href="#">Pires and Murray </a></li>
-                        <li><a href="#">Okazaki backing</a></li>
-                        <li><a href="#">Wolfsburg's Rodriguez</a></li>
-                        <li><a href="#">Jamie Vardy compared</a></li>
-                        <li><a href="#">Arsenal target Mkhitaryan</a></li>
-                        <li><a href="#">Messi wins libel case.</a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-8 col-sm-8 col-xs-12">
-                  <div class="news-post-holder">
-                     <div class="news-post-widget">
-                        <img class="img-responsive" src="/resources/images/img-01_002.jpg" alt="">
-                        <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
-                        </div>
-                     </div>
-                     <div class="news-post-widget">
-                        <img class="img-responsive" src="/resources/images/img-02_003.jpg" alt="">
-                        <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="news-post-holder">
-                     <div class="news-post-widget">
-                        <img class="img-responsive" src="/resources/images/img-03_003.jpg" alt="">
-                        <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full">
-                     <div class="main-heading sytle-2">
-                        <h2>Video</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>doloremque laudantium, totam rem aperiam</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="video_section_main theme-padding middle-bg vedio">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="full">
-                     <div class="match_vedio">
-                        <img class="img-responsive" src="/resources/images/img-07.jpg" alt="#" />
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <div class="team-holder theme-padding">
-         <div class="container">
-            <div class="main-heading-holder">
-               <div class="main-heading sytle-2">
-                  <h2>Meet Your Team</h2>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>doloremque laudantium, totam rem aperiam</p>
-               </div>
-            </div>
-            <div id="team-slider">
-               <div class="container">
-                  <div class="col-md-3">
-                     <div class="team-column style-2">
-                        <img src="/resources/images/img-1-1.jpg" alt="">
-                        <div class="player-name">
-                           <div class="desination-2">Defender</div>
-                           <h5>Charles Wheeler</h5>
-                           <span class="player-number">12</span>
-                        </div>
-                        <div class="overlay">
-                           <div class="team-detail-hover position-center-x">
-                              <p>Lacus vulputate torquent mollis venenatis quisque suspendisse fermentum primis,</p>
-                              <ul class="social-icons style-4 style-5">
-                                 <li><a class="facebook" href="#" tabindex="0"><i class="fa fa-facebook"></i></a></li>
-                                 <li><a class="twitter" href="#" tabindex="0"><i class="fa fa-twitter"></i></a></li>
-                                 <li><a class="youtube" href="#" tabindex="0"><i class="fa fa-youtube-play"></i></a></li>
-                                 <li><a class="pinterest" href="#" tabindex="0"><i class="fa fa-pinterest-p"></i></a></li>
-                              </ul>
-                              <a class="btn blue-btn" href=" /soccer/team-detail.html" tabindex="0">View Detail</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="team-column style-2">
-                        <img src="/resources/images/img-1-2.jpg" alt="">
-                        <div class="player-name">
-                           <div class="desination-2">Defender</div>
-                           <h5>Charles Wheeler</h5>
-                           <span class="player-number">12</span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="team-column style-2">
-                        <img src="/resources/images/img-1-3.jpg" alt="">
-                        <div class="player-name">
-                           <div class="desination-2">Defender</div>
-                           <h5>Charles Wheeler</h5>
-                           <span class="player-number">12</span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="team-column style-2">
-                        <img src="/resources/images/img-1-4.jpg" alt="">
-                        <div class="player-name">
-                           <div class="desination-2">Defender</div>
-                           <h5>Charles Wheeler</h5>
-                           <span class="player-number">12</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <footer id="footer" class="footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="full">
-                     <div class="footer-widget">
-                        <div class="footer-logo">
-                           <a href="#"><img src="/resources/images/footer-logo.png" alt="#" /></a>
-                        </div>
-                        <p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
-                        <ul class="social-icons style-4 pull-left">
-                           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                           <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-2">
-                  <div class="full">
-                     <div class="footer-widget">
-                        <h3>Menu</h3>
-                        <ul class="footer-menu">
-                           <li><a href="about.html">About Us</a></li>
-                           <li><a href="team.html">Our Team</a></li>
-                           <li><a href="news.html">Latest News</a></li>
-                           <li><a href="matche.html">Recent Matchs</a></li>
-                           <li><a href="blog.html">Our Blog</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="full">
-                     <div class="footer-widget">
-                        <h3>Contact us</h3>
-                        <ul class="address-list">
-                           <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..</li>
-                           <li><i class="fa fa-phone"></i> 123 456 7890</li>
-                           <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All departments</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Fruit & Nut Gifts</a></li>
+                            <li><a href="#">Fresh Berries</a></li>
+                            <li><a href="#">Ocean Foods</a></li>
+                            <li><a href="#">Butter & Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Fresh Onion</a></li>
+                            <li><a href="#">Papayaya & Crisps</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li>
                         </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="full">
-                     <div class="contact-footer">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    All Categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                        <div class="hero__text">
+                            <span>FRUIT FRESH</span>
+                            <h2>Vegetable <br />100% Organic</h2>
+                            <p>Free Pickup and Delivery Available</p>
+                            <a href="#" class="primary-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div class="footer-bottom">
-            <div class="container">
-               <p>Copyright © 2018 Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
+                            <h5><a href="#">Fresh Fruit</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
+                            <h5><a href="#">Dried Fruit</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
+                            <h5><a href="#">Vegetables</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
+                            <h5><a href="#">drink fruits</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
+                            <h5><a href="#">drink fruits</a></h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </footer>
-      <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-      <!-- ALL JS FILES -->
-      <script src="../resources/js/all.js"></script>
-      <!-- ALL PLUGINS -->
-      <script src="../resources/js/custom.js"></script>
-   </body>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Product</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".oranges">Oranges</li>
+                            <li data-filter=".fresh-meat">Fresh Meat</li>
+                            <li data-filter=".vegetables">Vegetables</li>
+                            <li data-filter=".fastfood">Fastfood</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Crab Pool Security</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="img/banner/banner-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="img/banner/banner-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Latest Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Top Rated Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Review Products</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Crab Pool Security</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-1.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-2.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="img/blog/blog-3.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Visit the clean farm in the US</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
 </html>
