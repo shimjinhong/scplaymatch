@@ -4,10 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.match.scplaymatch.dto.Test" alias="test"/> <!-- Cart클래스의 이름을 cart로 치환 -->
+		<typeAlias type="com.match.scplaymatch.dto.Test" alias="test"/>
+		<typeAlias type="com.match.scplaymatch.dto.Team" alias="team"/>
+		<typeAlias type="com.match.scplaymatch.dto.Member" alias="member"/> 
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="mapper/test.xml" /> <!-- Cart관련 쿼리 파일 등록-->
+		<mapper resource="mapper/test.xml" />
+		<mapper resource="mapper/member.xml" />
+		<mapper resource="mapper/team.xml" />
 	</mappers>
 </configuration>
