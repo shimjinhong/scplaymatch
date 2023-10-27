@@ -37,7 +37,7 @@ public class HomeController {
 	public String index(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		model.addAttribute("carts", cartServiceImpl.selectCart());
+		//model.addAttribute("carts", cartServiceImpl.selectCart());
 		
 		return "index";
 	}	
