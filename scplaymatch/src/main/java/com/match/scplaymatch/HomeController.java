@@ -2,6 +2,7 @@ package com.match.scplaymatch;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -28,7 +29,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
-				
+		
 		return "redirect:index.do";
 	}
 	
@@ -36,8 +37,8 @@ public class HomeController {
 	public String index(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		model.addAttribute("carts", cartServiceImpl.selectCart()); // carts라는 값에 카트에 담겨있는 물건을 데이터베이스에서 가져와 저장
-		System.out.println("cartServiceImpl.selectCart() >>" + cartServiceImpl.selectCart().get(0).getName());
+		model.addAttribute("carts", cartServiceImpl.selectCart());
+		
 		return "index";
 	}	
 	

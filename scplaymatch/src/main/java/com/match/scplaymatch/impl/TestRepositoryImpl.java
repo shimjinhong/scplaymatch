@@ -26,5 +26,16 @@ public class TestRepositoryImpl implements TestRepository {
 	public List<Test> selectCart() {	
 		return session.selectList(namespace + "selectCart");
 	}
+	
+	@Override
+	public List<Test> selectDb() {	
+		return session.selectList(namespace + "selectDb");
+	}
+	
+	
+	@Override
+	public List<Test> selectComm() {	
+		return session.selectList(namespace + "selectComm");
+	}
 
 }

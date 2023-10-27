@@ -33,4 +33,14 @@ public class TestServiceImpl implements TestService {
 		return testImpl.selectCart();
 	}
 
+	@Override
+	public List<Test> selectDb() {		
+		return testImpl.selectDb();
+	}	
+	
+	@Override
+	public List<Test> selectComm() {		
+		return testImpl.selectComm();
+	}	
+	
 }

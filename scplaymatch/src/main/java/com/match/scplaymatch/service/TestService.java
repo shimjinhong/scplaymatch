@@ -10,4 +10,8 @@ public interface TestService {
 	
 	public List<Test> selectCart(); // cart데이터 조회 용도	
 	
+	public List<Test> selectDb();
+	
+	public List<Test> selectComm();
+	
 }

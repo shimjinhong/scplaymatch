@@ -4,14 +4,28 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.match.scplaymatch.test"> <!-- Repository와 연동을 위해 사용될 namespace -->
 
-	<insert id="insertCart" parameterType="test"> <!-- Cart클래스를 변수로 받아와 쿼리에 사용 -->
+	<insert id="insertCart" parameterType="test">
 		insert
 		into TEST(name, num, count)
 		values (#{name}, #{num}, #{count})
 	</insert>
 	
-	<select id="selectCart" resultType="test"> <!-- 조회된 값을 Cart클래스에 담아 return -->
+	<select id="selectCart" resultType="test">
 		select name, num, count
 		from TEST
 	</select>
+	
+	
+	<select id="selectDb" resultType="test"> 
+		SELECT IDX, DB
+		from TEST
+		order by IDX
+	</select>
+	
+	<select id="selectComm" resultType="test">
+		SELECT COMM
+		from TEST
+		order by IDX
+	</select>	
+	
 </mapper>
